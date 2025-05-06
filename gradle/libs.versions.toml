@@ -1,0 +1,9 @@
+[versions]
+spring-boot = "3.4.5"
+spotless = "7.0.3"
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+
+[libraries]
+spotless = {module = "com.diffplug.spotless:spotless-plugin-gradle", version.ref = "spotless" }

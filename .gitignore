@@ -1,0 +1,6 @@
+# Jetbrains IDE Specific
+.idea
+
+# Gradle Build Tool Specific
+**/build/*
+**/.gradle/*
