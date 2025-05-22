@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+    <Properties>
+        <Property name="application.name">${spring:application.name}</Property>
+        <Property name="log4j.logLevel">${spring:log4j.logLevel}</Property>
+        <Property name="log4j.destination">${spring:log4j.destination}</Property>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ} - [${application.name}] [%p] - %m%n</Property>
+    </Properties>
+
+    <SpringProfile>
+    </SpringProfile>
+
+    <Appenders>
+        <Console name="default" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="${log4j.logLevel}">
+            <AppenderRef ref="${log4j.destination}" />
+        </Root>
+    </Loggers>
+</Configuration>
