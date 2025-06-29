@@ -2,6 +2,7 @@ plugins {
     java
     alias(libs.plugins.spring.boot)
     id("com.diffplug.spotless")
+    alias(libs.plugins.lombok)
 }
 
 dependencies {

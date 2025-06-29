@@ -1,0 +1,11 @@
+execution-plan:
+  name: "Test Plan"
+  type: open
+  steps:
+    - type: nothing
+      properties:
+        duration: PT1M
+    - type: ramp
+      properties:
+        duration: PT5M
+        users: 500
